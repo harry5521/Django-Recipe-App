@@ -1,0 +1,67 @@
+.table th, .table td {
+    vertical-align: middle; /* Keep content centered vertically */
+}
+
+.table td:nth-child(1) {  /* ID Column */
+    width: 60px; /* Enough for 3 digits */
+}
+
+.table td:nth-child(2) {  /* Recipe Name */
+    width: 250px; /* Fits ~50 characters */
+    word-break: break-word;
+}
+
+.table td:nth-child(3) {  /* Recipe Description */
+    width: auto; /* Expands dynamically */
+    max-width: 600px; /* Prevents it from being too wide */
+    word-wrap: break-word; 
+    white-space: normal;
+}
+
+.table td:nth-child(4) {  /* Recipe Image */
+    width: 120px; /* Matches image size */
+}
+
+.table td:nth-child(5) {  /* Actions */
+    width: 150px; /* Enough for buttons */
+    text-align: center;
+}
+h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    color: #ff6347; /* Warm tomato color */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 20px;
+    padding-bottom: 10px;
+    position: relative;
+}
+
+h2::after {
+    content: "🍽️✨"; /* Adds a food-related emoji */
+    display: block;
+    font-size: 1.5rem;
+    color: #ff4500; /* Slightly darker tomato color */
+    margin-top: 5px;
+}
+
+.recipe-tagline {
+    font-size: 1.2rem;
+    text-align: center;
+    color: #444; /* Dark gray for readability */
+    font-style: italic;
+    margin-top: 5px;
+    letter-spacing: 1px;
+    opacity: 0.9;
+}
+.make-recipe-heading {
+    font-size: 1.8rem;
+    font-weight: 600;
+    text-align: center;
+    color: #333;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+
